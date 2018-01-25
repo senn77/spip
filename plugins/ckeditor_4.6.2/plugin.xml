@@ -1,0 +1,17 @@
+<plugin>
+	<nom><multi>[fr]CKEditor pour SPIP[en]CKEditor for SPIP</multi></nom>
+	<auteur>Netline S.A.</auteur>
+	<licence>GNU/GLP</licence>
+	<version>1.0</version>
+	<description>
+	<multi>[fr]CKEditor pour SPIP[en]CKEditor for SPIP</multi>
+	</description>
+	<etat>stable</etat>
+	<prefix>ckeditor</prefix>
+	<icon>images/ckspip-logo.png</icon>
+	
+	<pipeline>
+		<nom>header_prive</nom>
+		<inclure>ckeditor_fonctions.php</inclure>
+	</pipeline>
+</plugin>

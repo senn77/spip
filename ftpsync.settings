@@ -1,0 +1,10 @@
+ {
+    "default": {
+        "host": "",
+        "username": "",
+        "password": "",
+        "path": "/",
+        "upload_on_save": true,
+        "tls": false
+    }
+}

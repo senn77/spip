@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="#LANG" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js">
+<head>
+    <script type='text/javascript'>
+    /*<![CDATA[*/
+    (function(H) {
+        H.className = H.className.replace(/\bno-js\b/, 'js')
+    })(document.documentElement); /*]]>*/
+    </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>[(#NOM_SITE_SPIP|textebrut)][ - (#SLOGAN_SITE_SPIP|textebrut)]</title>[
+    <meta name="description" content="(#DESCRIPTIF_SITE_SPIP|couper{150}|textebrut)" />]
+    <INCLURE{fond=include/head} />
+</head>
+<body class="page_sommaire">
+    <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--.main-->
+    <div class="main"></div>
+    <!--.main-->
+    <INCLURE{fond=include/footer,self=#SELF} />
+</body>
+</html>

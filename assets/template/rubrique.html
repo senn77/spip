@@ -1,0 +1,28 @@
+<BOUCLE_principale(RUBRIQUES) {id_rubrique}>
+    <!DOCTYPE html>
+    <html lang="#LANG" xml:lang="#LANG" class="[(#LANG_DIR)][ (#LANG)] no-js">
+    <head>
+        <script type='text/javascript'>
+        /*<![CDATA[*/
+        (function(H) {
+            H.className = H.className.replace(/\bno-js\b/, 'js')
+        })(document.documentElement); /*]]>*/
+        </script>
+        <title>[(#TITRE|couper{80}|textebrut) - ][(#NOM_SITE_SPIP|textebrut)]</title>
+        [
+        <meta name="description" content="(#INTRODUCTION{150}|textebrut)" />] [
+        <link rel="canonical" href="(#URL_RUBRIQUE|url_absolue)" />]
+        <INCLURE{fond=include/head} />
+        <link rel="alternate" type="application/rss+xml" title="<:syndiquer_rubrique:>" href="[(#URL_PAGE{backend}|parametre_url{id_rubrique,#ID_RUBRIQUE})]" />
+    </head>
+    <body class="page_rubrique">
+        <!--[if lt IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <!--.main-->
+        <div class="main"></div>
+        <!--.main-->
+        <INCLURE{fond=include/footer,self=#SELF} />
+    </body>
+    </html>
+    </BOUCLE_principale>
